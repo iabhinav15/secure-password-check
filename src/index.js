@@ -1,4 +1,4 @@
-const checkPassword = (str) => {
+export const checkPassword = (str) => {
 
     const string = str.toString();
     const resObj = {ans : true, description: "Valid Password"};
@@ -18,14 +18,14 @@ const checkPassword = (str) => {
         resObj.description = "Not a valid password, use some lowercase  alphabets";
         return resObj;
     }
-    else if(!(/[0-9]/.test(string))){
-        resObj.ans = false;
-        resObj.description = "Not a valid password, use some numbers";
-        return resObj;
-    }
     else if(!(/[A-Z]/.test(string))){
         resObj.ans = false;
         resObj.description = "Not a valid password, use some uppercase alphabets";
+        return resObj;
+    }
+    else if(!(/[0-9]/.test(string))){
+        resObj.ans = false;
+        resObj.description = "Not a valid password, use some numbers";
         return resObj;
     }
     else if(!(/[@#$&%!]/.test(string))){
@@ -37,5 +37,4 @@ const checkPassword = (str) => {
 }
 
 
-const ans = checkPassword("Abhinav#456");
-console.log(ans);
+

@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "description": "This is a library to check and validate user's password",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iabhinav15/secure-password-check"
+    "url": "git+https://github.com/iabhinav15/secure-password-check"
   },
   "keywords": ["password strength", "validate password", "check password strength", "check password"],
   "author": "Abhinav Singh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/iabhinav15/secure-password-check/issues"
-  }
+  },
+  "homepage": "https://github.com/iabhinav15/secure-password-check#readme"
 }

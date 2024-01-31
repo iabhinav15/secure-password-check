@@ -1,6 +1,6 @@
 {
   "name": "secure-password-check",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "This is a library to check and validate user's password",
   "main": "src/index.js",
   "type": "module",
